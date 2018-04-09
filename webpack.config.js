@@ -6,7 +6,10 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, './dist'),
     publicPath: '/dist/',
-    filename: 'build.js'
+    filename: 'vue-time.js',
+    library: 'VueTime',
+    libraryTarget: 'umd',
+    umdNamedDefine: true
   },
   module: {
     rules: [

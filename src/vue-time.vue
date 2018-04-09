@@ -1,8 +1,8 @@
 <template>
   <div>
     <span v-if="showDate" class="vue-time-date">{{ now.year + '年' + now.month + '月' + now.date + '日' }}</span>
-    <span class="vue-time-weekday">{{ '星期' + weekday[now.day] }}</span>
-    <span class="vue-time-time">{{ now.hour + ':'+ now.minute + ':' + now.second }}</span>
+    <span v-if="showDay" class="vue-time-weekday">{{ '星期' + weekday[now.day] }}</span>
+    <span v-if="showTime" class="vue-time-time">{{ now.hour + ':'+ now.minute + ':' + now.second }}</span>
   </div>
 </template>
 

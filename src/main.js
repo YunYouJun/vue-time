@@ -1,7 +1,6 @@
-import Vue from 'vue'
-import App from './App.vue'
+import VueTime from './vue-time.vue'
+export default VueTime
 
-new Vue({
-  el: '#app',
-  render: h => h(App)
-})
+if (typeof window !== 'undefined' && window.Vue) {
+  window.Vue.component('vue-time', VueTime);
+}
