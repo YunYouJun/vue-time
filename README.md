@@ -5,7 +5,7 @@
 [![download](http://img.shields.io/npm/dt/vue-time.svg)](https://npmcharts.com/compare/vue-time?minimal=true)
 [![gzip](http://img.badgesize.io/https://unpkg.com/vue-time/dist/vue-time.js?compression=gzip&label=gzip%20size:%20JS)](http://img.badgesize.io/https://unpkg.com/vue-time/dist/vue-time.js?compression=gzip&label=gzip%20size:%20JS)
 
-> Display current time. [Demo](http://github.yunyoujun.cn/vue-time/)
+> Display current time. [Demo](https://github.yunyoujun.cn/vue-time/)
 > 
 
 ## How to use
