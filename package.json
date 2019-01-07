@@ -1,7 +1,7 @@
 {
   "name": "vue-time",
   "description": "Display current time.",
-  "version": "0.0.6",
+  "version": "0.1.0",
   "author": "YunYouJun <me@yunyoujun.cn>",
   "license": "MIT",
   "main": "dist/vue-time.js",
