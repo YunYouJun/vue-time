@@ -8,8 +8,8 @@
 </head>
 
 <body>
-  <script src='https://unpkg.com/vue@2.2.6'></script>
-  <script src="./vue-time.js"></script>
+  <script src="https://unpkg.com/vue"></script>
+  <script src="./vueTime.umd.js"></script>
   <a href="https://github.com/YunYouJun/vue-time" class="github-corner" aria-label="View source on Github">
     <svg width="80" height="80" viewBox="0 0 250 250" style="fill:#4AB7BD; color:#fff; position: absolute; top: 0; border: 0; right: 0;"
       aria-hidden="true">
@@ -24,23 +24,24 @@
     <template>
       <h1>Vue Time</h1>
       <div class='container'>
-        <vue-time :show-date="showDate" :show-day="showDay" show-time="showTime"></vue-time>
+        <vue-time :show-date="showDate" :show-day="showDay" :show-time="showTime"></vue-time>
       </div>
     </template>
   </div>
   <script>
-    var Main = {
-      name: 'test',
-      data() {
-        return {
-          showDate: true,
-          showDay: true,
-          showTime: true
-        }
+  new Vue({
+    name: 'vueTime',
+    data() {
+      return {
+        showDate: true,
+        showDay: true,
+        showTime: true
       }
-    };
-    var Ctor = Vue.extend(Main)
-    new Ctor().$mount('#app')
+    },
+    components: {
+      vueTime
+    }
+  }).$mount('#app')
   </script>
 </body>
 </html>

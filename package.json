@@ -13,32 +13,10 @@
     "moment"
   ],
   "scripts": {
-    "dev": "cross-env NODE_ENV=development webpack-dev-server --open --hot",
-    "build": "cross-env NODE_ENV=production webpack --progress --hide-modules && cp dist/vue-time.js demo",
+    "serve": "vue serve src/App.vue -o",
+    "build": "vue-cli-service build --target lib --name vueTime && cp dist/vueTime.umd.js demo",
     "prepare": "npm run build",
     "deploy": "gh-pages -d demo"
-  },
-  "dependencies": {
-    "gh-pages": "^2.0.1",
-    "vue": "^2.5.11"
-  },
-  "browserslist": [
-    "> 1%",
-    "last 2 versions",
-    "not ie <= 8"
-  ],
-  "devDependencies": {
-    "babel-core": "^6.26.3",
-    "babel-loader": "^7.1.5",
-    "babel-preset-env": "^1.7.0",
-    "babel-preset-stage-3": "^6.24.1",
-    "cross-env": "^5.2.0",
-    "css-loader": "^0.28.7",
-    "file-loader": "^1.1.4",
-    "vue-loader": "^13.7.3",
-    "vue-template-compiler": "^2.5.21",
-    "webpack": "^3.12.0",
-    "webpack-dev-server": "^3.1.14"
   },
   "repository": {
     "type": "git",
@@ -47,5 +25,6 @@
   "bugs": {
     "url": "https://github.com/YunYouJun/vue-time/issues"
   },
-  "homepage": "https://github.com/YunYouJun/vue-time#readme"
+  "homepage": "https://github.com/YunYouJun/vue-time#readme",
+  "dependencies": {}
 }
