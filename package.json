@@ -4,7 +4,7 @@
   "version": "0.1.1",
   "author": "YunYouJun <me@yunyoujun.cn>",
   "license": "MIT",
-  "main": "dist/vue-time.js",
+  "main": "dist/vueTime.umd.js",
   "keywords": [
     "time",
     "vue",

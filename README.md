@@ -3,7 +3,7 @@
 [![vue2](https://img.shields.io/badge/vue-2.x-brightgreen.svg)](https://vuejs.org/)
 [![npm](https://img.shields.io/npm/v/vue-time.svg)](https://www.npmjs.com/package/vue-time)
 [![download](http://img.shields.io/npm/dt/vue-time.svg)](https://npmcharts.com/compare/vue-time?minimal=true)
-[![gzip](http://img.badgesize.io/https://unpkg.com/vue-time/dist/vue-time.js?compression=gzip&label=gzip%20size:%20JS)](http://img.badgesize.io/https://unpkg.com/vue-time/dist/vue-time.js?compression=gzip&label=gzip%20size:%20JS)
+[![unpkg](https://img.shields.io/bundlephobia/minzip/vue-time.svg)](https://unpkg.com/vue-time)
 
 > Display current time. [Demo](https://yunyoujun.github.io/vue-time/) (Once Per Second)
 
@@ -59,7 +59,7 @@ export default {
 
 ### Display
 
-`公元2019年1月28日星期一 19:55:13`
+> 公元2019年1月28日星期一 19:55:13
 
 ### Options
 
