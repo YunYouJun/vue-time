@@ -39,7 +39,17 @@ export default {
     return {
       showDate: false,
       showDay: true,
-      showTime: true
+      showTime: true,
+      locales: 'zh-CN',
+      options: {
+        hour12: false,
+        timeZone: 'Asia/Shanghai',
+        era: 'long',
+        weekday: 'long',
+        year: 'numeric',
+        month: 'numeric',
+        day: 'numeric'
+      }
     }
   }
 }
@@ -53,6 +63,20 @@ export default {
 
 Attribute | Description | Type | Options | Default
 ---|---|---|---|---
-show-date | 显示年份日期 | boolean | —— | true
-show-day | 显示星期几 | boolean | —— | true
-show-time | 显示时间 | boolean | —— | true
+show-date | 显示年份日期 | Boolean | —— | true
+show-day | 显示星期几 | Boolean | —— | true
+show-time | 显示时间 | Boolean | —— | true
+locales | 区域 | String | - | 'zh-CN'
+options | 设置 | Object | - | |
+
+You can see more info about `locales` & `options` from [DateTimeFormat - MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/DateTimeFormat).
+
+Attribute | Description | Type | Default
+---|---|---|---
+hour12 | 12小时制 | Boolean | false
+timeZone | 时区 | String | 'Asia/Shanghai'
+era | 公元 | String |'long'
+weekday | 星期几 | String | 'long' (short:周几)
+year | 年份 | String | 'numeric'
+month | 月份 | String | 'numeric'
+day | 星期几 | String | 'numeric'
