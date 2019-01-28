@@ -5,6 +5,10 @@
   "author": "YunYouJun <me@yunyoujun.cn>",
   "license": "MIT",
   "main": "dist/vueTime.umd.js",
+  "files": [
+    "dist",
+    "src"
+  ],
   "keywords": [
     "time",
     "vue",
