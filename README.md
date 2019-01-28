@@ -27,7 +27,9 @@ npm install -g @vue/cli-service-global
 
 ```html
 <template>
-  <vue-time :show-date="showDate" :show-day="showDay" :show-time="showTime"></vue-time>
+  <div>
+    <vue-time :show-date="showDate" :show-day="showDay" :show-time="showTime"></vue-time>
+  </div>
 </template>
 ```
 
@@ -75,7 +77,7 @@ Attribute | Description | Type | Default
 ---|---|---|---
 hour12 | 12小时制 | Boolean | false
 timeZone | 时区 | String | 'Asia/Shanghai'
-era | 公元 | String |'long'
+era | 公元 | String | 'long'
 weekday | 星期几 | String | 'long' (short:周几)
 year | 年份 | String | 'numeric'
 month | 月份 | String | 'numeric'
