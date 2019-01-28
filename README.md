@@ -5,7 +5,9 @@
 [![download](http://img.shields.io/npm/dt/vue-time.svg)](https://npmcharts.com/compare/vue-time?minimal=true)
 [![gzip](http://img.badgesize.io/https://unpkg.com/vue-time/dist/vue-time.js?compression=gzip&label=gzip%20size:%20JS)](http://img.badgesize.io/https://unpkg.com/vue-time/dist/vue-time.js?compression=gzip&label=gzip%20size:%20JS)
 
-> Display current time. [Demo](https://github.yunyoujun.cn/vue-time/) (Once Per Second)
+> Display current time. [Demo](https://yunyoujun.github.io/vue-time/) (Once Per Second)
+
+In fact, it is just a practice about how to build a lib.
 
 ## How to use
 
@@ -23,29 +25,29 @@ npm install -g @vue/cli-service-global
 
 ### Example
 
-```vue
+```html
 <template>
   <vue-time :show-date="showDate" :show-day="showDay" :show-time="showTime"></vue-time>
 </template>
+```
 
-<script>
-  import vueTime from 'vue-time';
-  export default {
-    components: { vueTime },
-    data () {
-      return {
-        showDate: false,
-        showDay: true,
-        showTime: true
-      }
+```js
+import 'vue-time';
+export default {
+  components: { vueTime },
+  data () {
+    return {
+      showDate: false,
+      showDay: true,
+      showTime: true
     }
   }
-</script>
+}
 ```
 
 ### Display
 
-`2018年4月9日 星期一 16:15:24`
+`公元2019年1月28日星期一 19:55:13`
 
 ### Options
 

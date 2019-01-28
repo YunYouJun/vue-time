@@ -13,10 +13,12 @@
     "moment"
   ],
   "scripts": {
-    "serve": "vue serve src/App.vue -o",
-    "build": "vue-cli-service build --target lib --name vueTime && cp dist/vueTime.umd.js demo",
-    "prepare": "npm run build",
-    "deploy": "gh-pages -d demo"
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build --target lib --name vueTime && cp dist/vueTime.umd.js demo/static-demo",
+    "predeploy": "yarn build:example",
+    "deploy": "gh-pages -d demo/vue-demo/dist",
+    "build:example": "vue-cli-service build --dest demo/vue-demo/dist demo/vue-demo/main.js",
+    "prepublish": "yarn build"
   },
   "repository": {
     "type": "git",
@@ -26,5 +28,7 @@
     "url": "https://github.com/YunYouJun/vue-time/issues"
   },
   "homepage": "https://github.com/YunYouJun/vue-time#readme",
-  "dependencies": {}
+  "dependencies": {
+    "vue": "^2.5.22"
+  }
 }
