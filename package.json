@@ -1,7 +1,7 @@
 {
   "name": "vue-time",
   "description": "Display current time.",
-  "version": "0.2.0",
+  "version": "0.1.3",
   "author": "YunYouJun <me@yunyoujun.cn>",
   "license": "MIT",
   "main": "dist/vueTime.umd.js",
@@ -19,10 +19,10 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build --target lib --name vueTime && cp dist/vueTime.umd.js demo/static-demo",
-    "predeploy": "yarn build:example",
+    "predeploy": "npm run build:example",
     "deploy": "gh-pages -d demo/vue-demo/dist",
     "build:example": "vue-cli-service build --dest demo/vue-demo/dist demo/vue-demo/main.js",
-    "prepublish": "yarn build"
+    "prepublish": "npm run build"
   },
   "repository": {
     "type": "git",
@@ -32,7 +32,8 @@
     "url": "https://github.com/YunYouJun/vue-time/issues"
   },
   "homepage": "https://github.com/YunYouJun/vue-time#readme",
-  "dependencies": {
-    "vue": "^2.5.22"
+  "devDependencies": {
+    "@vue/cli": "^3.4.0",
+    "vue": "^2.6.5"
   }
 }

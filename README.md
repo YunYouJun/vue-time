@@ -9,6 +9,8 @@
 
 In fact, it is just a practice about how to build a lib.
 
+If you want to handle time, you can use [`dayjs`](https://github.com/iamkun/dayjs) or [`moment`](https://github.com/moment/moment) .
+
 ## How to use
 
 ```bash
