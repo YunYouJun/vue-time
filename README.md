@@ -19,10 +19,10 @@ npm install vue-time
 
 ### Dev
 
+#### Install
+
 ```sh
-# if you do not have it
-npm install -g @vue/cli
-npm install -g @vue/cli-service-global
+npm install
 ```
 
 ### Example

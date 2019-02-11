@@ -33,7 +33,8 @@
   },
   "homepage": "https://github.com/YunYouJun/vue-time#readme",
   "devDependencies": {
-    "@vue/cli": "^3.4.0",
-    "vue": "^2.6.5"
+    "@vue/cli-service": "^3.4.0",
+    "vue": "^2.6.5",
+    "vue-template-compiler": "^2.6.5"
   }
 }
