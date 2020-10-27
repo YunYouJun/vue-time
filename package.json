@@ -1,7 +1,7 @@
 {
   "name": "vue-time",
   "description": "Display current time.",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "author": "YunYouJun <me@yunyoujun.cn>",
   "license": "MIT",
   "main": "dist/vueTime.umd.js",
@@ -33,8 +33,8 @@
   },
   "homepage": "https://github.com/YunYouJun/vue-time#readme",
   "devDependencies": {
-    "@vue/cli-service": "^3.4.0",
-    "vue": "^2.6.5",
-    "vue-template-compiler": "^2.6.5"
+    "@vue/cli-service": "^4.5.8",
+    "vue": "^2.6.12",
+    "vue-template-compiler": "^2.6.12"
   }
 }
